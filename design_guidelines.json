@@ -1,0 +1,98 @@
+{
+  "theme": "light",
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "Manrope",
+    "strategy": "High legibility, modern sans-serif. The 'Old Money Tech' approach—sterile, exact, trustworthy. Headings use 'Outfit' with tight tracking, Body uses 'Manrope' for precise data reading.",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-medium",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-medium",
+      "h3": "text-xl sm:text-2xl font-medium",
+      "body": "text-base leading-relaxed text-slate-700",
+      "labels": "text-xs font-semibold tracking-[0.1em] uppercase text-slate-500"
+    }
+  },
+  "colors": {
+    "primary": "#0A192F",
+    "background": "#FDFDF9",
+    "surface": "#FFFFFF",
+    "accent": "#2563EB",
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "error": "#EF4444",
+    "neutral_border": "#E5E7EB",
+    "text_primary": "#0A192F",
+    "text_secondary": "#4B5563",
+    "strategy": "Authoritative Calm. Warm off-white background with deep navy text for high contrast without clinical harshness. Accent blue for interactive elements. Semantic colors strictly for status states (Success, Warning, Error)."
+  },
+  "visual_enhancers": {
+    "shadows": "Minimalist 'Crisp' shadows. Ambient shadow: shadow-sm, Hover state: shadow-md. Do not over-use heavy shadows.",
+    "borders": "1px subtle borders (border-neutral-200/border-slate-200) on cards. Avoid thick borders. Use Technical Grid Borders where data is dense.",
+    "radius": "rounded-lg for main containers, rounded-md for inner elements. Avoid fully rounded pill shapes except for badges/tags.",
+    "glassmorphism": "Strictly limited. Do not use for generic cards. Can be used for sticky headers or AI panels: backdrop-blur-xl bg-white/80 border-b border-neutral-200.",
+    "textures": "Clean, flat colors. Minimal subtle noise allowed on deep navy surfaces only. Keep the off-white background matte and pristine."
+  },
+  "grids_and_layouts": {
+    "marketing_landing": "Tetris Grid. Wide constraints (max-w-7xl). Asymmetrical bento layouts for features. Generous padding (py-24, py-32).",
+    "dashboard_app": "Desktop-first persistent left sidebar (w-64) + main content area. High Density Grid (gap-6) for data and overview cards. Max width for app content is constrained for readability (max-w-6xl mx-auto).",
+    "spacing_scale": "p-4 for small cards, p-6 or p-8 for main sections. Use padding aggressively to give elements breathing room."
+  },
+  "components": {
+    "buttons": "Flat solid backgrounds. Hover states should translate-y-[-1px] and slightly deepen the color. Primary buttons in Accent Blue.",
+    "cards": "White surface (bg-white) with 1px border (border-neutral-200) and no shadow by default. On hover, shadow-sm.",
+    "timeline": "Horizontal pipeline design. Use semantic colors for states (Green=Verified, Amber=Processing). Clear node connections.",
+    "forms": "Inputs with flat backgrounds, 1px borders, subtle focus rings (focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500).",
+    "sidebar": "Persistent left sidebar. Off-white background (bg-[#FDFDF9]) with subtle border-r (border-neutral-200) to blend seamlessly with the app, using Navy text for active states.",
+    "badges": "Pill-shaped, using low-opacity backgrounds with high-contrast text (e.g., bg-amber-50 text-amber-700)."
+  },
+  "motion": {
+    "interactions": "Fast and purposeful. 150ms-200ms ease-out transitions for hovers.",
+    "page_load": "Subtle fade and slide-up (translate-y-2 to 0, opacity 0 to 1) for main sections.",
+    "timeline_progress": "Animate the width of the connecting line in horizontal timelines on scroll or load using framer-motion."
+  },
+  "accessibility": {
+    "contrast": "Ensure all text against off-white meets 4.5:1 ratio. Avoid light gray text on white. Use text-secondary (#4B5563).",
+    "testing": "All interactive elements MUST include data-testid attribute.",
+    "focus": "Clear focus rings on all inputs and buttons."
+  },
+  "image_urls": {
+    "avatar_rahul": {
+      "url": "https://images.unsplash.com/photo-1589386417686-0d34b5903d23?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBpbmRpYW4lMjBtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODc2MDcyMTN8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional Indian man smiling in a suit. Use for 'Rahul Sharma' demo account avatar."
+    },
+    "landing_hero_accent": {
+      "url": "https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxjbGVhbiUyMG1vZGVybiUyMGFic3RyYWN0JTIwYXJjaGl0ZWN0dXJlJTIwbWluaW1hbHxlbnwwfHx8fDE3ODc2MDcyMTN8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Clean, minimal modern architecture. Use sparingly as a subtle background or masked image in the marketing hero section to convey 'structure and resolution'."
+    },
+    "abstract_texture": {
+      "url": "https://images.unsplash.com/photo-1645811791231-279658fb46dc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwyfHxtaW5pbWFsJTIwYWJzdHJhY3QlMjBibHVlJTIwZ3JhZGllbnQlMjB0ZXh0dXJlfGVufDB8fHx8MTc4NzYwNzIxMnww&ixlib=rb-4.1.0&q=85",
+      "description": "Minimal abstract blue texture. Use behind AI explanation panels or resolution cards to give a subtle 'AI-powered' feel without being flashy."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use .js and .jsx files for React components since the environment is JS-based, not TS-based.",
+    "Build the application specifically for Desktop screens (1280px+). Sidebars and side panels must be persistent.",
+    "Ensure 'PF Resolve' feels like a high-end fintech product (like Stripe/Linear), not a generic SaaS or old government portal. Rely heavily on exact typography and spacing over colors.",
+    "Do not use mobile app patterns on desktop (e.g., no bottom tab bars).",
+    "Use lucide-react for all iconography.",
+    "Implement the 'Prototype' badge in the header/sidebar clearly but unobtrusively.",
+    "The primary interactive app flow must include a Dashboard-style left sidebar and a wide main content area. The AI assistant can be a right-side panel.",
+    "Make the horizontal timeline visually prominent in the Transfer Overview.",
+    "Adhere STRICTLY to the semantic color guidelines for PF status (Green=Verified/Success, Amber=Needs Attention/Processing, Red=Error).",
+    "Install `framer-motion` for subtle page transitions and timeline animations.",
+    "Ensure the Landing Page Hero uses high-fidelity UI previews, not generic illustrations."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Avoid generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy and subtle 1px borders.",
+    "Do NOT apply universal transitions (e.g., transition: all). Target specific properties.",
+    "Do NOT center align the app container in CSS.",
+    "Do NOT use emoji characters for icons.",
+    "Every interaction needs micro-animations (hover states, click states).",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Never use placeholder URLs (like placehold.it). Use the provided image URLs.",
+    "Prioritize Shadcn UI components but heavily customize their Tailwind classes to match the 'PF Resolve' brand.",
+    "All interactive and key informational elements MUST include a data-testid attribute.",
+    "CRITICAL: Do not use complete transparent background in header, overlays, or any surface that has content under it."
+  ]
+}
